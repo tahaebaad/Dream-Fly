@@ -41,4 +41,6 @@ This project was developed focusing on heavily structured OOP and Design Pattern
 * **Shavaiz Tariq**
 * **Ahmed Cheema**
 
+* 🔗 Read the detailed technical breakdown and discussion of this project on my [LinkedIn Post][(YOUR_LINKEDIN_POST_LINK_HERE)](https://www.linkedin.com/posts/taha-ebaad-819b8328b_built-and-launched-%F0%9D%90%83%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%9A%F0%9D%90%A6%F0%9D%90%85%F0%9D%90%A5%F0%9D%90%B2-along-activity-7472383198560452608-iscO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZ5lNUBO_-anndHWlDvE3UmJfwqGNORPsk).
+
 Built for the Software Design & Analysis course, Spring 2026.
