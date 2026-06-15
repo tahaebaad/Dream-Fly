@@ -1,0 +1,667 @@
+/* ============================================================
+   DreamFly – Light Theme
+   ============================================================ */
+
+/* ── Root & Global ────────────────────────────────────────── */
+.root {
+    -fx-font-family: "Segoe UI", "Inter", "Roboto", sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #F8F9FA;
+}
+
+/* ── Scrollbar Theming ───────────────────────────────────── */
+.scroll-bar {
+    -fx-background-color: #F0F4F8;
+}
+.scroll-bar .thumb {
+    -fx-background-color: #CBD5E1;
+    -fx-background-radius: 4px;
+}
+.scroll-bar .track {
+    -fx-background-color: #F0F4F8;
+}
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+}
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: #3772FF;
+}
+
+/* ── Navigation Bar ──────────────────────────────────────── */
+.nav-bar {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 14 24 14 24;
+    -fx-border-color: transparent transparent #E2E8F0 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.nav-logo {
+    -fx-font-size: 20px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #1A1A1A;
+    -fx-letter-spacing: -0.5px;
+}
+
+.nav-logo-accent {
+    -fx-text-fill: #3772FF;
+}
+
+.nav-link {
+    -fx-background-color: transparent;
+    -fx-text-fill: #6B7A99;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+
+.nav-link:hover {
+    -fx-text-fill: #1A1A1A;
+    -fx-background-color: #F0F4F8;
+}
+
+.nav-link-active {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3772FF;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-border-color: transparent transparent #3772FF transparent;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-radius: 0;
+}
+
+.nav-sign-in {
+    -fx-background-color: transparent;
+    -fx-text-fill: #1A1A1A;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 8px;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.nav-sign-in:hover {
+    -fx-background-color: #F0F4F8;
+}
+
+/* ── Search Panel ────────────────────────────────────────── */
+.search-panel {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 28 32 28 32;
+    -fx-spacing: 18;
+    -fx-border-color: transparent transparent #E2E8F0 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.search-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #6B7A99;
+    -fx-letter-spacing: 1.5px;
+}
+
+/* Trip type toggle row */
+.trip-type-bar {
+    -fx-spacing: 6;
+    -fx-padding: 0 0 6 0;
+}
+
+.trip-type-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #6B7A99;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 6 14 6 14;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+
+.trip-type-btn:hover {
+    -fx-background-color: #F0F4F8;
+    -fx-text-fill: #1A1A1A;
+}
+
+.trip-type-btn-active {
+    -fx-background-color: #3772FF;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-padding: 6 14 6 14;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+
+/* class type buttons */
+.class-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #6B7A99;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-padding: 6 12 6 12;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+
+.class-btn:hover {
+    -fx-text-fill: #1A1A1A;
+    -fx-background-color: #F0F4F8;
+}
+
+.class-btn-active {
+    -fx-background-color: #3772FF;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-padding: 6 12 6 12;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+
+/* Input field labels */
+.field-label {
+    -fx-font-size: 10px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #3772FF;
+    -fx-letter-spacing: 1px;
+}
+
+/* ── Inputs (ComboBox, DatePicker, Spinner, TextField) ────── */
+.combo-box,
+.date-picker,
+.spinner,
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E2E8F0;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #1A1A1A;
+}
+
+.combo-box .list-cell,
+.combo-box-popup .list-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #1A1A1A;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E2E8F0;
+}
+
+.combo-box-popup .list-cell:hover,
+.combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: #F0F4F8;
+}
+
+.combo-box:focused,
+.date-picker:focused,
+.spinner:focused,
+.text-field:focused {
+    -fx-border-color: #3772FF;
+    -fx-effect: dropshadow(gaussian, rgba(55, 114, 255, 0.2), 8, 0, 0, 0);
+}
+
+.date-picker .text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #1A1A1A;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: #F0F4F8;
+}
+
+.spinner .increment-arrow,
+.spinner .decrement-arrow {
+    -fx-background-color: #6B7A99;
+}
+
+/* ── Primary Button ──────────────────────────────────────── */
+.button-primary {
+    -fx-background-color: linear-gradient(to right, #3772FF, #1a6cff);
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-font-size: 13px;
+    -fx-padding: 11 28 11 28;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(55, 114, 255, 0.3), 8, 0, 0, 2);
+    -fx-border-width: 0;
+}
+
+.button-primary:hover {
+    -fx-background-color: linear-gradient(to right, #2e65f0, #1460e8);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.button-primary:pressed {
+    -fx-background-color: #1a5cdd;
+    -fx-effect: none;
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* ── Sort Buttons (BEST / CHEAPEST / FASTEST / EARLIEST) ─── */
+.sort-bar {
+    -fx-background-color: transparent;
+    -fx-padding: 8 16 8 16;
+    -fx-spacing: 6;
+}
+
+.sort-label {
+    -fx-text-fill: #6B7A99;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-letter-spacing: 1px;
+}
+
+.sort-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #6B7A99;
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-letter-spacing: 1px;
+    -fx-padding: 7 16 7 16;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+
+.sort-btn:hover {
+    -fx-background-color: #F0F4F8;
+    -fx-text-fill: #1A1A1A;
+}
+
+.sort-btn-active {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #1A1A1A;
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-letter-spacing: 1px;
+    -fx-padding: 7 16 7 16;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+}
+
+/* ── Results Panel ───────────────────────────────────────── */
+.results-panel {
+    -fx-padding: 0;
+    -fx-background-color: #F8F9FA;
+    -fx-spacing: 0;
+}
+
+.results-header {
+    -fx-background-color: #F8F9FA;
+    -fx-padding: 12 20 8 20;
+    -fx-spacing: 6;
+}
+
+.results-route {
+    -fx-font-size: 22px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #1A1A1A;
+}
+
+.results-meta {
+    -fx-font-size: 12px;
+    -fx-text-fill: #6B7A99;
+}
+
+.flight-list {
+    -fx-background-color: #F8F9FA;
+    -fx-padding: 0 12 12 12;
+    -fx-border-width: 0;
+}
+
+.flight-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 5 0 5 0;
+}
+
+.flight-list .list-cell:empty {
+    -fx-background-color: transparent;
+}
+
+.flight-list .list-cell:selected,
+.flight-list .list-cell:focused {
+    -fx-background-color: transparent;
+}
+
+/* ── Flight Card ─────────────────────────────────────────── */
+.flight-card {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 14px;
+    -fx-padding: 18 20 18 20;
+    -fx-border-color: #E2E8F0;
+    -fx-border-radius: 14px;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 10, 0, 0, 2);
+}
+
+.flight-card:hover {
+    -fx-border-color: #CBD5E1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 15, 0, 0, 4);
+}
+
+/* Airline badge */
+.airline-badge {
+    -fx-background-color: #F0F4F8;
+    -fx-background-radius: 6px;
+    -fx-padding: 4 8 4 8;
+}
+
+.airline-badge-text {
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #6B7A99;
+}
+
+.card-airline-name {
+    -fx-font-weight: 700;
+    -fx-font-size: 14px;
+    -fx-text-fill: #1A1A1A;
+}
+
+.card-subtext {
+    -fx-text-fill: #6B7A99;
+    -fx-font-size: 11px;
+}
+
+/* Times */
+.card-time {
+    -fx-font-size: 26px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #1A1A1A;
+}
+
+.card-airport {
+    -fx-text-fill: #6B7A99;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-letter-spacing: 1px;
+}
+
+/* Duration + flight line */
+.card-duration {
+    -fx-text-fill: #8899BB;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+}
+
+/* Stops */
+.stops-direct {
+    -fx-text-fill: #05CD99;
+    -fx-font-weight: 700;
+    -fx-font-size: 11px;
+}
+
+.stops-warning {
+    -fx-text-fill: #FFB547;
+    -fx-font-weight: 600;
+    -fx-font-size: 11px;
+}
+
+/* Price */
+.card-price {
+    -fx-font-size: 24px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #1A1A1A;
+}
+
+.card-price-label {
+    -fx-font-size: 10px;
+    -fx-text-fill: #6B7A99;
+    -fx-font-weight: 600;
+    -fx-letter-spacing: 0.5px;
+}
+
+/* Best value badge */
+.best-value-badge {
+    -fx-background-color: #FFB547;
+    -fx-background-radius: 4px;
+    -fx-padding: 3 8 3 8;
+    -fx-font-size: 10px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #1A1A1A;
+}
+
+/* Flight path arrow/icon */
+.flight-icon {
+    -fx-text-fill: #3772FF;
+    -fx-font-size: 14px;
+    -fx-padding: 0 4 0 4;
+}
+
+.flight-line {
+    -fx-stroke: #E2E8F0;
+    -fx-stroke-width: 1.5;
+    -fx-stroke-dash-array: 4 4;
+}
+
+/* ── Filter Panel ────────────────────────────────────────── */
+.filter-panel {
+    -fx-background-color: #F8F9FA;
+    -fx-padding: 20 16 20 16;
+    -fx-border-color: transparent #E2E8F0 transparent transparent;
+    -fx-border-width: 0 1 0 0;
+    -fx-spacing: 22;
+}
+
+.filter-title {
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #6B7A99;
+    -fx-letter-spacing: 1.5px;
+}
+
+.filter-reset {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3772FF;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+.filter-section-title {
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #1A1A1A;
+    -fx-letter-spacing: 1px;
+    -fx-padding: 0 0 6 0;
+}
+
+/* Radio buttons styled as pill rows */
+.radio-button {
+    -fx-text-fill: #6B7A99;
+    -fx-font-size: 12px;
+}
+
+.radio-button .radio {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #CBD5E1;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+}
+
+.radio-button:selected .radio {
+    -fx-background-color: #3772FF;
+    -fx-border-color: #3772FF;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: white;
+}
+
+/* Check boxes */
+.check-box {
+    -fx-text-fill: #6B7A99;
+    -fx-font-size: 12px;
+}
+
+.check-box .box {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #CBD5E1;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #3772FF;
+    -fx-border-color: #3772FF;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+/* Filter count badge */
+.filter-count {
+    -fx-background-color: #F0F4F8;
+    -fx-background-radius: 10px;
+    -fx-padding: 2 7 2 7;
+    -fx-font-size: 11px;
+    -fx-text-fill: #6B7A99;
+}
+
+/* Price slider */
+.slider {
+    -fx-padding: 4 0 4 0;
+}
+
+.slider .track {
+    -fx-background-color: #E2E8F0;
+    -fx-background-radius: 2px;
+    -fx-pref-height: 3px;
+}
+
+.slider .thumb {
+    -fx-background-color: #FFB547;
+    -fx-background-radius: 50%;
+    -fx-pref-width: 14px;
+    -fx-pref-height: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(255,181,71,0.5), 6, 0, 0, 0);
+}
+
+.slider .thumb:hover {
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+
+/* Departure time toggle buttons */
+.time-btn {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #6B7A99;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-padding: 8 6 8 6;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-border-width: 1px;
+    -fx-border-color: #E2E8F0;
+    -fx-border-radius: 8px;
+    -fx-min-width: 70px;
+}
+
+.time-btn:hover {
+    -fx-background-color: #F0F4F8;
+    -fx-text-fill: #1A1A1A;
+}
+
+.time-btn-active {
+    -fx-background-color: #F0F4F8;
+    -fx-text-fill: #3772FF;
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-padding: 8 6 8 6;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-border-width: 1px;
+    -fx-border-color: #3772FF;
+    -fx-border-radius: 8px;
+    -fx-min-width: 70px;
+}
+
+/* ── Status Bar ──────────────────────────────────────────── */
+.status-bar {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 6 16 6 16;
+    -fx-border-color: #E2E8F0 transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+}
+
+.status-label {
+    -fx-text-fill: #6B7A99;
+    -fx-font-size: 11px;
+}
+
+/* ── Dialog ──────────────────────────────────────────────── */
+.dialog-pane {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 1px;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #F8F9FA;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #1A1A1A;
+    -fx-font-weight: 700;
+}
+
+.dialog-pane .button-bar .button {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #1A1A1A;
+    -fx-border-color: #E2E8F0;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.dialog-pane .button-bar .button:hover {
+    -fx-background-color: #F0F4F8;
+}
+
+/* ── ProgressIndicator ───────────────────────────────────── */
+.progress-indicator .percentage {
+    -fx-fill: #3772FF;
+}
+
+.progress-indicator .indicator {
+    -fx-background-color: transparent;
+}
+
+.progress-indicator .progress {
+    -fx-background-color: #3772FF;
+}
+
+/* ── Separator ───────────────────────────────────────────── */
+.separator .line {
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 1px;
+}

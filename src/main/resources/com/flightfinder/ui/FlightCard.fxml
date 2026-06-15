@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Circle?>
+
+<fx:root type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+         styleClass="flight-card" spacing="0">
+
+    <!-- Main content row -->
+    <HBox spacing="0" alignment="CENTER_LEFT">
+
+        <!-- ── Airline Info (left) ──────────────────────────── -->
+        <VBox alignment="CENTER_LEFT" spacing="5" minWidth="175" maxWidth="175">
+            <!-- Airline badge: e.g. "GB BA · BA 117" -->
+            <HBox styleClass="airline-badge" alignment="CENTER_LEFT" spacing="6" maxWidth="140">
+                <StackPane style="-fx-background-color: #3772FF; -fx-background-radius: 3;" prefWidth="22" prefHeight="16">
+                    <Label fx:id="airlineCode" style="-fx-font-size: 9px; -fx-font-weight: 800; -fx-text-fill: white;"/>
+                </StackPane>
+                <Label fx:id="aircraft" styleClass="airline-badge-text"/>
+            </HBox>
+
+            <!-- Airline logo + name -->
+            <HBox spacing="8" alignment="CENTER_LEFT" style="-fx-padding: 4 0 0 0;">
+                <ImageView fx:id="airlineLogo" fitWidth="48" fitHeight="48" preserveRatio="true"
+                           style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 4, 0, 0, 1);"/>
+                <VBox spacing="1">
+                    <Label fx:id="airlineName" styleClass="card-airline-name" wrapText="true"/>
+                    <Label fx:id="aircraftType" styleClass="card-subtext"/>
+                </VBox>
+            </HBox>
+        </VBox>
+
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <!-- ── Journey: Departure ── Duration ── Arrival ────── -->
+        <HBox spacing="16" alignment="CENTER">
+            <!-- Departure -->
+            <VBox alignment="CENTER_RIGHT" spacing="2">
+                <Label fx:id="departureTime" styleClass="card-time"/>
+                <Label fx:id="departureAirport" styleClass="card-airport"/>
+                <Label fx:id="departureCity" styleClass="card-subtext"/>
+            </VBox>
+
+            <!-- Arrow / duration graphic -->
+            <VBox alignment="CENTER" spacing="3" minWidth="110">
+                <Label fx:id="duration" styleClass="card-duration" style="-fx-alignment: center;"/>
+                <HBox alignment="CENTER" spacing="0">
+                    <Line endX="36" styleClass="flight-line"/>
+                    <Label text="✈" styleClass="flight-icon"/>
+                    <Line endX="36" styleClass="flight-line"/>
+                </HBox>
+                <Label fx:id="stops" styleClass="stops-direct" style="-fx-alignment: center;"/>
+            </VBox>
+
+            <!-- Arrival -->
+            <VBox alignment="CENTER_LEFT" spacing="2">
+                <Label fx:id="arrivalTime" styleClass="card-time"/>
+                <Label fx:id="arrivalAirport" styleClass="card-airport"/>
+                <Label fx:id="arrivalCity" styleClass="card-subtext"/>
+            </VBox>
+        </HBox>
+
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <!-- ── Price + CTA (right) ─────────────────────────── -->
+        <VBox alignment="CENTER_RIGHT" spacing="6" minWidth="145">
+            <Label fx:id="priceMeta" styleClass="card-price-label" text="PER PERSON · ECONOMY"/>
+            <Label fx:id="price" styleClass="card-price"/>
+            <HBox spacing="8" alignment="CENTER_RIGHT">
+                <Button fx:id="viewButton" text="VIEW DEAL" styleClass="button-primary"
+                        minWidth="110" prefHeight="34"/>
+                <!-- Wishlist heart -->
+                <StackPane style="-fx-background-color: #F0F4F8; -fx-background-radius: 50%; -fx-border-color: #E2E8F0; -fx-border-radius: 50%; -fx-border-width: 1;" prefWidth="34" prefHeight="34">
+                    <Label text="♡" style="-fx-text-fill: #6B7A99; -fx-font-size: 14px;"/>
+                </StackPane>
+            </HBox>
+        </VBox>
+    </HBox>
+
+</fx:root>
